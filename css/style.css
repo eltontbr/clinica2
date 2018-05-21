@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-clinica {
+    width: 80px;
+}
+
+#menu-hamburguer {
+    width: 30px;
+}
+
+header nav {
+    display: none;
+}
+
+/* BANNER */
+
+/* 
+    .beiradinha-site { 
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+}
+*/
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    z-index: -1;
+}
+
+.banner img {
+    width: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: .5s;
+}
+
+.banner img.ativa{
+    transform: translateX(0);
+}
+
+
+
+/* inicio desenvolvimento Elton - parte 1 */
+
+
+
+#titulo-quem-somos {
+    padding-left: 0px;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#titulo-servicos {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+#titulo-nossa-equipe {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+#titulo-convenios {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#titulo-contato {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* fim desenvolvimento Elton - parte 1 */
+
+@media(min-width: 680px) {
+    
+    /* HEADER */
+    #menu-hamburguer {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        background-color: #20c89e; 
+        color: white;
+    }
+    
+    .servicos {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .container-menu-servicos {
+        display: none;
+        position: absolute;
+        background-color: #626463;
+        padding: 10px;
+    }
+    
+    .container-menu-servicos p:hover {
+        background-color: #20c89e; 
+        color: white;
+    }
+
+    
+
+/* inicio desenvolvimento Elton - parte 2 */
+
+
+/* SECTION QUEM SOMOS  */
+/* XXXXXXXXXXXXXXXXXXX */
+
+#section-quem-somos {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+}
+
+#section-quem-somos div{
+    width: 50%;
+    padding: 30px;
+    overflow: hidden;
+}
+
+#section-quem-somos div img {
+    width: 100%;
+}
+
+#texto-quem-somos {
+    width: 50%;
+    padding: 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    vertical-align: center;
+}
+
+
+/* SECTION QUEM SERVICOS  */
+/* XXXXXXXXXXXXXXXXXXXXXX */
+
+#section-servicos {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+#section-servicos div{
+    width: 50%;
+    padding: 30px;
+    overflow: hidden;
+}
+
+#section-servicos div img {
+    width: 100%;
+}
+
+#texto-servicos {
+    margin: 0%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* SECTION EQUIPE  */
+/* XXXXXXXXXXXXXXXXXXX */
+
+
+#section-equipe {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+#section-equipe div{
+    width: 50%;
+    padding: 30px;
+    overflow: hidden;
+}
+
+#section-equipe div img {
+    width: 100%;
+}
+
+#texto-equipe {
+    margin: 0%;
+    padding-left: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+/* SECTION CONVENIOS  */
+/* XXXXXXXXXXXXXXXXXXX */
+
+
+#section-convenios {
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    padding-bottom: 50px;
+}
+
+
+/* SECTION QUEM CONTATO  */
+/* XXXXXXXXXXXXXXXXXXX */
+
+#section-contato {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    height: 500px;
+}
+
+#section-contato div {
+    width: 50%;
+    padding: 25px;
+}
+
+#section-contato input{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#section-contato input.maior{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#section-contato Button{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color:yellowgreen;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* SECTION FOOTER  */
+/* XXXXXXXXXXXXXXXXXXX */
+
+footer {
+    background-color:#ebebeb;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;  
+}
+
+
+footer p {
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+
+}
+
+
+/* BUTTON VOLTAR AO MENU  */
+/* XXXXXXXXXXXXXXXXXXX */
+
+#myBtn {
+    display: none; /*Hidden by default  */    
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #20c89e; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+}
