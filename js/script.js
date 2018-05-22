@@ -3,9 +3,9 @@ let servicos = document.querySelector('.servicos');
 let containerSubServicos = document.querySelector('.container-menu-servicos');
 let mouseSobreServicos = false;
 let mouseSobreSubServicos = false;
+let menuAberto = false;
 
-
-// let botaoMenuHamburguer = document.querySelector("#menu-hamburguer");
+let botaoMenuHamburguer = document.querySelector("#menu-hamburguer");
 
 
 let imagensBanner = document.querySelectorAll('.banner img');
@@ -37,18 +37,21 @@ function checarMouseMenu() {
 }
 
 
-// function mudarMenu() {
-//     let menu = document.querySelector('header nav');
-//     if (menu.style.display === 'none') {
-//         menu.style.display === 'block';
-//     }
-//     else {
-//         menu.style.display = 'none';
-//     }
-// }
+function mudarMenu() {
+    let menu = document.querySelector('header nav');
+
+    if (menuAberto) {
+        menu.style.transform = 'translateY(-150%)';
+        menuAberto = false;
+    }
+    else {
+        menu.style.transform = 'translateY(0)';
+        menuAberto = true;
+    }
+}
 
 
-// botaoMenuHamburguer.onclick = mudarMenu;
+botaoMenuHamburguer.onclick = mudarMenu;
 
 
 

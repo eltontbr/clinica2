@@ -14,7 +14,8 @@ header {
 }
 
 #logo-clinica {
-    width: 80px;
+    width: 50px;
+    padding: 5px;
 }
 
 #menu-hamburguer {
@@ -22,7 +23,16 @@ header {
 }
 
 header nav {
-    display: none;
+    position: absolute;
+    top: 75px;
+    background-color: #ebebeb;
+    width: 100%;
+    transform: translateY(-150%);
+    transition: .6s;
+}
+
+.container-menu-servicos{
+    padding-left: 40px;
 }
 
 /* BANNER */
@@ -35,10 +45,35 @@ header nav {
 }
 */
 
+nav a {
+    display: block;
+    padding: 5px;
+    color: #5f5f5f;
+}
+
+a:hover {
+    background-color: #20c89e; 
+}
+
+a {
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+
+.servicos:hover {
+    background-color:#ebebeb;
+}
+
+.container-menu-servicos > p:hover {
+    background-color: #20c89e;
+    color: white;
+}
+
 .banner {
     position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 33vw;
     z-index: -1;
 }
 
@@ -96,6 +131,12 @@ header nav {
     font-weight: bold;
 }
 
+#section-quem-somos div img{ 
+    width: 100%;
+    margin: 0%;
+}
+
+
 
 /* fim desenvolvimento Elton - parte 1 */
 
@@ -107,17 +148,32 @@ header nav {
     }
 
     header nav {
-        display: block;
+        transform: translateY(0);
+        position: relative;
+        top: 0;
+        background-color: inherit;
     }
 
     nav a {
+        display: inline;
         margin: 0 10px;
         text-decoration: none;
+        padding: 22px 10px;
+        color: #5f5f5f;
+    }
+
+    nav a div {
+        color: white;
     }
     
     a:hover {
         background-color: #20c89e; 
         color: white;
+    }
+
+    a, a:visited  {
+        color: #5f5f5f;
+
     }
     
     .servicos {
@@ -128,7 +184,8 @@ header nav {
     .container-menu-servicos {
         display: none;
         position: absolute;
-        background-color: #626463;
+        background-color: rgb(95, 95, 95);
+        padding-left: 0;
         padding: 10px;
     }
     
